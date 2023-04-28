@@ -1,0 +1,734 @@
+
+* {
+    box-sizing: border-box;
+}
+
+#title {
+    font-size: 48px;
+    font-weight: bold;
+}
+
+#top {
+    display: flex; 
+    flex-direction: row;
+    vertical-align: sub;
+    font-size: 20px;
+    padding-bottom: 5px;
+    opacity: .5;
+}
+
+icon {
+    font-size: 10px; 
+    color:white;
+}
+
+body {
+    background-color: #131720;
+    color: white;
+}
+
+#section {
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+}
+
+.topnav {
+    overflow: hidden;
+    background-color: #131720;
+    padding: 10px;
+
+    display: flex;
+    justify-content: space-between;
+}
+
+.topnav a {
+    color: white;
+    padding: 8px 8%;
+    text-decoration: none;
+    display: flex;
+    text-align: center;
+}
+
+.logo-font {
+    font-family: UnifrakturMaguntia;
+    font-size: 55px;
+}
+
+.topnav a.icon {
+    background-color: black;
+    display: block;
+    position: absolute;
+    border-radius: 3px;
+}
+
+.topnav:hover {
+    background-color: #151f30;
+}
+
+input {
+    /*all: unset; //Use? */
+    font: 15px system-ui;
+    color: black;
+    height: 100%;
+    width: 100%;
+    padding: 6px 9px;
+}
+
+.column {
+    float: left;
+    width: 25%;
+    padding: 10px 10px;
+}
+
+.card {
+    display: flex;
+    flex-wrap: wrap;
+    width: 310px;
+    justify-content: center;
+
+    border-radius: 19px;
+    padding: 15px;
+    text-align: center;
+    background-color: #151f30;
+}
+
+.info {
+    position: relative;
+    text-align: center;
+}
+
+.rating {
+    background-color: #151f30;
+    color: white;
+    padding: 7px 10px;
+    border-radius: 5px;
+}
+
+.rating:hover {
+    cursor: pointer;
+    opacity: .9;
+}
+
+.number {
+    vertical-align: sub;
+    font-size: 26px;
+}
+
+.gray {
+    color: rgb(103, 103, 103);
+}
+
+#bottom {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    padding: 5px 4px;
+}
+
+.genres {
+    display: flex;
+    align-items: center;
+    justify-content: start;
+    flex-wrap: wrap;
+}
+
+.genre {
+    background-color: transparent;
+    color: white;
+    border-radius: 20px;
+    border: 1px solid white;
+    text-align: center;
+    margin: 5px;
+    padding: 4px 15px;
+    min-height: 25px;
+    font-size: 18px;
+}
+
+.genre:hover {
+    opacity: .65;
+    cursor: pointer;
+}
+
+/*------------------------------------------------------------------------------*/
+
+#visuals {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    padding: 20px 40px;
+    background-color: black;
+}
+
+#poster {
+    width:30%;
+    height: 500px;
+}
+
+#video {
+    width: 68%;
+    height: 500px;
+}
+
+#tag-div {
+    padding-left: 10%;
+    background-color: #1d2a41;
+    margin: 40px auto;
+    opacity: 0.6;
+    border: #131720 1px solid;
+    white-space: pre-wrap;
+    display: none;
+    justify-content: center;
+    width: 65%;
+}
+
+blockquote {
+    font-family: Georgia, serif;
+    font-size: 28px;
+    font-style: italic;
+    margin: 0.25em 0;
+    padding: 40px 160px;
+    line-height: 1.45;
+    position: relative;
+    color: wheat;
+    display: block;
+}
+    
+blockquote:before {
+    display: block;
+    padding-left: 10px;
+    content: "\201C";
+    font-size: 200px;
+    position: absolute;
+    left: -20px;
+    top: -30px;
+    color: #979797;
+}    
+
+#content {
+    margin: 0px 120px;
+    padding: 0px 30px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+
+
+body {
+    font-family: 'Roboto';
+}
+
+#overview, 
+#languages, 
+#director, 
+#writers, 
+#stars {
+    padding: 20px;
+    border-bottom: 1px solid rgb(99, 98, 98);
+}
+
+#languages b, 
+#director b, 
+#writers b, 
+#stars b {
+    color: #979797;
+}
+
+#overview {
+    color: white;
+    line-height: 2;
+}
+
+/*-----------------------------------------------------------------------------*/
+
+@keyframes tonext {
+    75% {
+        left: 0;
+    }
+    95% {
+        left: 100%;
+    }
+    98% {
+        left: 100%;
+    }
+    99% {
+        left: 0;
+    }
+}
+  
+@keyframes tostart {
+    75% {
+        left: 0;
+    }
+    95% {
+        left: -300%;
+    }
+    98% {
+        left: -300%;
+    }
+    99% {
+        left: 0;
+    }
+}
+  
+@keyframes snap {
+    96% {
+        scroll-snap-align: center;
+    }
+    98% {
+        scroll-snap-align: none;
+    }
+    99% {
+        scroll-snap-align: none;
+    }
+    100% {
+        scroll-snap-align: center;
+    }
+}
+
+* {
+    scrollbar-color: transparent transparent; /* thumb and track color */
+    scrollbar-width: 0px;
+}
+  
+*::-webkit-scrollbar {
+    width: 0;
+}
+
+*::-webkit-scrollbar-track {
+    background: transparent;
+}
+
+*::-webkit-scrollbar-thumb {
+    background: transparent;
+    border: none;
+}
+  
+ol, li {
+    list-style: none;
+    margin: 0;
+    padding: 0;
+}
+
+.carousel {
+    position: relative;
+    padding-top: 43%;
+    filter: drop-shadow(0 0 10px #0003);
+    perspective: 100px;
+}
+  
+.carousel__viewport {
+    position: absolute;
+    top: 0;
+    right: 0;
+    bottom: 0;
+    left: 0;
+    display: flex;
+    overflow-x: scroll;
+    scroll-behavior: smooth;
+    scroll-snap-type: x mandatory;
+}
+
+.carousel__slide {
+    position: relative;
+    flex: 0 0 100%;
+    width: 100%;
+}
+
+.carousel__slide:before {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate3d(-50%,-40%,70px);
+    color: #fff;
+    font-size: 2em;
+}
+  
+.carousel__snapper {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    scroll-snap-align: center;
+}
+  
+@media (hover: hover) {
+    .carousel__snapper {
+        animation-name: tonext, snap;
+        animation-timing-function: ease;
+        animation-duration: 4s;
+        animation-iteration-count: infinite;
+    }
+    .carousel__slide:last-child .carousel__snapper {
+        animation-name: tostart, snap;
+    }
+}
+  
+@media (prefers-reduced-motion: reduce) {
+    .carousel__snapper {
+        animation-name: none;
+    }
+}
+
+.carousel:hover .carousel__snapper,
+.carousel:focus-within .carousel__snapper {
+    animation-name: none;
+}
+
+.carousel__navigation {
+    position: absolute;
+    right: 0;
+    bottom: 0;
+    left: 0;
+    text-align: center;
+}
+  
+.carousel__navigation-list, 
+.carousel__navigation-item {
+    display: inline-block;
+}
+  
+.carousel__navigation-button {
+    display: inline-block;
+    width: 1.5rem;
+    height: 1.5rem;
+    background-color: #333;
+    background-clip: content-box;
+    border: 0.25rem solid transparent;
+    border-radius: 50%;
+    font-size: 0;
+    transition: transform 0.2s;
+}
+
+/*Editing buttons for left and right on the actual carousel*/
+.carousel::before, 
+.carousel::after, 
+.carousel__prev, 
+.carousel__next {
+    position: absolute;
+    top: 0;
+    margin-top: 21.5%;
+    width: 4rem;
+    height: 4rem;
+    transform: translateY(-50%);
+    border-radius: 10%;
+    font-size: 0;
+    outline: 0;
+}
+  
+/*Positioning the toggle button slightly to the left and right of carousel content container*/
+.carousel::before, 
+.carousel__prev {
+    left: -1rem;
+}
+.carousel::after, 
+.carousel__next {
+    right: -1rem;
+}
+  
+/*Holders for before-after buttons*/
+.carousel::before,
+.carousel::after {
+    content: '';
+    z-index: 1; /*implies overlay*/
+    background-color: #5d5d5d;
+    background-size: 1.5rem 1.5rem;
+    background-repeat: no-repeat;
+    background-position: center center;
+    color: #fff;
+    font-size: 2.5rem;
+    line-height: 4rem;
+    text-align: center;
+    pointer-events: none;
+}  
+  
+/*Before-after icons <> to toggle previous or next*/
+.carousel::before {
+    background-image: url("data:image/svg+xml,%3Csvg viewBox='0 0 100 100' xmlns='http://www.w3.org/2000/svg'%3E%3Cpolygon points='0,50 80,100 80,0' fill='%23fff'/%3E%3C/svg%3E");
+}
+.carousel::after {
+    background-image: url("data:image/svg+xml,%3Csvg viewBox='0 0 100 100' xmlns='http://www.w3.org/2000/svg'%3E%3Cpolygon points='100,50 20,100 20,0' fill='%23fff'/%3E%3C/svg%3E");
+}
+
+/*-------------------------------------------------------------------------------*/
+
+#cast {
+    display: flex;
+    flex-wrap: wrap;
+}
+
+.heading {
+    font-size: 40px;
+    font-weight: bold;
+    margin: 30px 0px 30px 15px;
+    margin-left: 15px;
+    border-left: 12px solid rgb(31, 31, 160);
+    padding-left: 10px;
+}
+
+.actor {
+    margin-top: 15px;
+    margin-left: 15px;
+    width: 45%;
+    display: flex;
+    flex-direction: row;
+}
+
+.profile-pic {
+    height: 70px;
+    width: 65px;
+    border-radius: 100%;
+}
+
+.text-value {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    margin-left: 10px;
+}
+
+.actor-name {
+    color: #fff;
+    font-size: 20px;
+}
+
+.character {
+    color: gray;
+    font-size: 17px;
+    margin-bottom: 5px;
+}
+
+/*-------------------------------------------------------------------------------*/
+
+.thumbnail {
+    display: block;
+    margin: 0 auto;
+    height: 390px;
+    width: 340px;
+}
+
+.date {
+    display: block;
+    background-color: rgb(9, 132, 241);
+    color: aliceblue;
+    font-size: 12px;
+    position: absolute;  
+    top: 8px;
+    right: 10px;
+    padding: 5px;
+    border-radius: 5px;
+}
+
+#rating {
+    display: block;
+    background-color: #151f30;
+    color: white;
+    font-size: 12px;
+    position: absolute;  
+    bottom: 8px;
+    right: 10px;
+    padding: 3px 5px;
+    border-radius: 5px;
+    opacity: 0.75;
+}
+
+#genres {
+    display: flex;
+    margin: 4px;
+    align-items: center;
+    justify-content: center;
+    flex-wrap: wrap;
+    padding: 5px;
+}
+
+#info {
+    position: relative;
+    text-align: center;
+}
+
+.number {
+    font-size: 18px;
+}
+
+#similar-movies .card {
+    width: 370px;
+    height: 610px;
+}
+
+.card a {
+    color: aliceblue;
+}
+
+
+
+
+
+
+
+
+
+/*REVIEW CARD ---------------------------------------------------*/
+
+.review-card {
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    border: 1px solid #4e4a4a;
+    width: 653px;
+
+    background-color: #151f30;
+}
+
+.long-cont {
+    width: 650px;
+    background-color: #1d2a41;
+    color: #b0b0b0;
+    padding: 8px;
+    font-size: 16px;
+}
+
+.input-conts {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-around;
+    align-items: flex-start;
+}
+
+.input-conts input, .input-conts textarea {
+    width: 630px;
+    margin: 10px;
+}
+
+#new_headline {
+    font-weight: bold;
+    margin-bottom: 7px;
+}
+
+#submit {
+    width: 630px;
+    margin: 10px;
+    padding: 10px;
+    color: rgb(167, 168, 204);
+    background-color: #283056;
+    border: none;
+}
+
+#submit:hover {
+    cursor: pointer;
+    color: #fff;
+    background-color: #324292;
+}
+
+.filler-text {
+    padding-left: 8px;
+    padding-top: 8px;
+}
+
+/*SAVED REVIEW CARD ---------------------------------------------------*/
+
+.saved-review-card {
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: column;
+    border: 1px solid #4e4a4a;
+    width: 600px;
+
+    background-color: #151f30;
+    padding: 8px 15px 15px 15px;
+    margin: 5px;
+}
+
+#star-icon {
+    font-size: 225%;
+    color:rgb(186, 159, 8);
+    padding-right: 10px;
+}
+
+.review-rating {
+    display: flex;
+    flex-direction: row;
+    justify-content: flex-start;
+    align-items: center;
+    padding-bottom: 15px;
+}
+
+.review-number {
+    display: flex;
+    flex-direction: row;
+    justify-content: flex-start;
+    align-items: baseline;
+    color: #7e7c7c;
+}
+
+.review-number h4 {
+    color: #eae2e2;
+}
+
+.review-header {
+    line-height: 18px;
+}
+
+.review-user {
+    color: rgb(74, 128, 179);
+    font-size: 15px;
+}
+
+.review-time {
+    color:rgb(205, 206, 227);
+    font-size: 13px;
+}
+
+.headline {
+    font-size: 18px;
+    letter-spacing: 1px;
+}
+
+.review-content {
+    font-family: Verdana, Arial, sans-serif;
+    border-bottom: 1px solid rgb(100, 96, 96);
+    padding: 25px 0px;
+    margin-bottom: 15px;
+}
+
+.review-text {
+    font-size: 16px;
+}
+
+.review-translation {
+    font-size: 13px;
+    color: #b0b0b3;
+}
+
+.review-buttons {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    margin: 3px;
+}
+
+.review-buttons button {
+    border-radius: 3px;
+    border: none;
+    padding: 10px 8px;
+    color: #fdfdfd;
+    width: 200px;
+}
+
+.review-buttons button:hover {
+    cursor: pointer;
+    opacity: 0.7;
+}
+
+#edit-btn {
+    background-color: #3c4365;
+    margin-right: 10px;
+}
+
+#delete-btn {
+    background-color: rgb(134, 77, 77);
+}
+

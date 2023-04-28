@@ -1,0 +1,52 @@
+<!--new index if it works out as planned-->
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="shortcut icon" href="./favicon.ico" />
+    <title>Sign Up with UnRate - UnRate</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <link rel="stylesheet" href="signupstyle.css">    
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=UnifrakturMaguntia&display=swap" rel="stylesheet">
+</head>
+<body>
+    <div id="signup-form" class="blur">
+        <form  id="signup-content" action="" method="post">
+            <div id="signup-inner">
+                <div class="container">
+                    <div id="form-logo">
+                        <a href="index.html" class="active logo-font">UnRate</a>
+                    </div>
+                    <h2>Create Account</h2>
+                    <label for="uname"><b>Your username</b></label>
+                    <input type="text" placeholder="Enter Username" name="uname" id="uname" required>
+                    <br>
+                    <label for="mail"><b>Email</b></label>
+                    <input type="email" placeholder="Enter Email" id="mail" name="mail" required>
+                    <label for="psw"><b>Password</b></label>
+                    <input type="password" placeholder="Enter Password" id="psw" name="psw" required>
+                    <label for="confirm-psw"><b>Re-enter Password</b></label>
+                    <input type="password" placeholder="Confirm Password" id="confirm-psw" name="confirm-psw" required>
+
+                    <button type="submit" id="signup-btn">Sign Up</button>
+                    <label for="remember">
+                    <input type="checkbox" checked="checked" id="remember"> Keep me signed in.
+                    </label>
+                    
+                </div>
+                <div class="container bottom">
+                    <span class="signup">
+                        Already have an account? <br>
+                        <button type="button" onclick="toLogin()" id="signup-btn">Login</button>
+                    </span>
+                </div>
+            </div>
+        </form>
+    </div>
+
+</body>
+<script src="script.js"></script>
+</html>

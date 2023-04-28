@@ -1,0 +1,26 @@
+{
+  "name": "unrate444",
+  "version": "1.0.0",
+  "description": "",
+  "main": "app.js",
+  "type": "module",
+  "engines": { 
+    "node" : ">=4.3.2" 
+  },
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "start": "node app"
+  },
+  "author": "",
+  "license": "ISC",
+  "dependencies": {
+    "@azure/ai-language-text": "^1.0.0",
+    "@azure/ai-text-analytics": "^5.1.0",
+    "axios": "^1.4.0",
+    "cors": "^2.8.5",
+    "dotenv": "^16.0.3",
+    "express": "^4.18.2",
+    "mongodb": "^5.3.0",
+    "uuid": "^9.0.0"
+  }
+}

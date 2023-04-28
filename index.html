@@ -1,0 +1,136 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title id="tab">UnRate: Rate & Review your favourite Movies</title>
+    <link rel="shortcut icon" href="./favicon.ico" />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <link rel="stylesheet" href="style.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=UnifrakturMaguntia&display=swap" rel="stylesheet">
+</head>
+<body>
+
+    <div id="signin-form">
+        <form class="modal-content animate" id="signin-content" action="" method="post">
+            <div id="signin-inner">
+                <div class="container">
+                    <div id="form-logo">
+                        <a href="index.html" class="active logo-font">UnRate</a>
+                    </div>
+                    
+                    <a href="index.html" id="close-btn" class="close" onclick="closeForm()">x</a>
+                    <h2>Sign In</h2>
+                    <label for="uname"><b>Username</b></label>
+                    <input type="text" placeholder="Enter Username" name="uname" id="uname" required>
+                    <br>
+                    <label for="psw"><b>Password</b></label>
+                    <span class="psw-forgot"><a href="#">Forgot your password?</a></span>
+                    <input type="password" placeholder="Enter Password" id="psw" name="psw" required>
+                    
+                    <button type="submit" id="signin-btn">Sign In</button>
+                    <input type="checkbox" checked="checked" id="remember">
+                    <label for="remember">
+                        Keep me signed in.
+                    </label>   
+                </div>
+      
+                <div class="container bottom">
+                    <span class="signup">
+                        New to UnRate? <br>
+                        <button type="button" onclick="toSignup()" id="signup-btn">Create your UnRate account</button>
+                    </span>
+                </div>
+            </div>
+        </form>
+    </div>
+    
+    <div class="topnav">
+        <div class="top-left">
+            <div class="icon">
+                <a href="javascript:void(0);" class="icon" onclick="menu()">
+                    <i class="fa fa-bars"></i>
+                </a>
+            </div>
+            <div id="logo">
+                <a href="index.html" class="active logo-font">UnRate</a>
+            </div>
+        </div>
+
+        <div class="top-right">
+            <div class="search-container">
+                <form role="search" id="form">
+                    <input type="search" id="query" name="q" placeholder="Search...">
+                    <button type="submit">Search</button>
+                </form>
+            </div>
+            <div class="icon">
+                <a href="javascript:void(0);" class="icon" id="sign-in" onclick="openForm()">    
+                    <i class="fa fa-user"></i>
+                </a>
+            </div>
+        </div>
+        <!--
+            add user account or login here
+        <div class="search-container">
+            <form role="search" id="form">
+                <input type="search" id="query" name="q" placeholder="Search...">
+            </form>
+        </div>
+        -->    
+    </div>
+
+    <div class="padding">
+    <!--Class to get padding between rows-->
+        <!--To group all the movie cards into one section--> 
+        <div id="left">
+            <div id="sidebar">
+                <br>
+                <a href="#now-playing" onclick="nowPlaying()">Now Playing in India</a><br>
+                <a href="#popular-in" onclick="popularIndia()">Popular in India</a><br>
+                <a href="#top" onclick="topRated()">Top Rated Movies of All Time</a><br>
+                <a href="#upcoming" onclick="upcoming()">Coming to Theatres in India</a><br>
+                <a href="#contact">Contact</a><br>
+                <a href="#about">About</a><br>
+                <a href="#about">Toggle Light Mode</a><br>
+                <a onclick="openForm()" style="width:auto;">Sign In</a>
+            </div>
+        </div>
+
+        <div id="right">
+            <div id="cont-1">
+                <h1>Popular Today</h1>
+            </div>
+
+            <div id="cont-2">
+                <section id="section">
+            <!--
+                    <div class="row">
+                        <div class="column">
+                            <div class="card">
+                                <div class="info">
+                                    <img src="rpg bg.jpg" alt="Movie Image" class="thumbnail" id="image">
+                                    <div class="date"></div>
+                                    <div class="rating">
+                                        <span class="number">⭐ //vote</span>
+                                        <br>IMDB
+                                    </div>
+                                </div>
+                                <span class="genres">
+                                    
+                                </span>
+                                <h3 id=">Movie</h3>
+                            </div>
+                        </div>
+                    </div>
+            -->
+                </section>
+            </div>
+        </div>
+    </div>
+</body>
+<script src="script.js"></script>
+</html>

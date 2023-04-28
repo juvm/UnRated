@@ -1,0 +1,138 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title id="tab">Movie Site</title>
+    <link rel="shortcut icon" href="./favicon.ico" />
+    <link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
+    <link rel="stylesheet" href="movie.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <link href='https://fonts.googleapis.com/css?family=Roboto' rel='stylesheet'>
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=UnifrakturMaguntia&display=swap" rel="stylesheet">
+</head>
+<body>
+    <div class="topnav">
+        <a href="index.html" class="active logo-font">UnRate</a>
+    </div>
+<div id="content">
+    <div id="title">Movie Title</div>
+    
+    <div id="top">
+    </div>
+    
+    <div id="visuals">
+        <img id="poster"></img>
+        <iframe id="video" width="560" height="315" title="Trailer" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allow="fullscreen"></iframe>
+    </div>
+
+    <div id="bottom">
+        <div id="genres"></div>
+        <div class="rating"></div>
+    </div>
+    
+    <div id="overview"></div>
+    <div id="languages"></div>
+    <div id="director"></div>
+    <div id="writers"></div>
+    <div id="stars"></div>
+
+    <div class="heading">Top Cast</div>
+    <div id="cast">
+    </div>
+
+    <div id="tag-div">
+        <blockquote id="tagline"></blockquote>
+    </div>
+
+    <div class="heading">Reviews and Ratings</div>
+    <section class="reviews-here" id="section">
+
+    </section>
+
+
+    <div class="heading">Similar Movies</div>
+    
+</div>
+<div id="similar-movies">
+    <section class="carousel" aria-label="Gallery">
+        <ol class="carousel__viewport">
+            <li id="carousel__slide1" tabindex="0" class="carousel__slide">
+                <div class="carousel__snapper">
+                    <a href="#carousel__slide5" class="carousel__prev">
+                        Go to last slide
+                    </a>
+                    <div id="carousel1"></div>
+                    <a href="#carousel__slide2" class="carousel__next">
+                        Go to next slide
+                    </a>
+                </div>
+            </li>
+            <li id="carousel__slide2" tabindex="0" class="carousel__slide">
+                <div class="carousel__snapper"></div>
+                <a href="#carousel__slide1" class="carousel__prev">
+                    Go to previous slide
+                </a>
+                <div id="carousel2"></div>
+                <a href="#carousel__slide3" class="carousel__next">
+                    Go to next slide
+                </a>
+            </li>
+            <li id="carousel__slide3" tabindex="0" class="carousel__slide">
+                <div class="carousel__snapper"></div>
+                <a href="#carousel__slide2" class="carousel__prev">
+                    Go to previous slide
+                </a>
+                <div id="carousel3"></div>
+                <a href="#carousel__slide4" class="carousel__next">
+                    Go to next slide
+                </a>
+            </li>
+            <li id="carousel__slide4" tabindex="0" class="carousel__slide">
+                <div class="carousel__snapper"></div>
+                <a href="#carousel__slide3" class="carousel__prev">
+                    Go to previous slide
+                </a>
+                <div id="carousel4"></div>
+                <a href="#carousel__slide5" class="carousel__next">
+                    Go to first slide
+                </a>
+            </li>
+            <li id="carousel__slide5" tabindex="0" class="carousel__slide">
+                <div class="carousel__snapper"></div>
+                <a href="#carousel__slide4" class="carousel__prev">
+                    Go to previous slide
+                </a>
+                <div id="carousel5"></div>
+                <a href="#carousel__slide1" class="carousel__next">
+                    Go to first slide
+                </a>
+            </li>
+        </ol>
+        <aside class="carousel__navigation">
+            <ol class="carousel__navigation-list">
+                <li class="carousel__navigation-item">
+                    <a href="#carousel__slide1" class="carousel__navigation-button"></a>
+                </li>
+                <li class="carousel__navigation-item">
+                    <a href="#carousel__slide2" class="carousel__navigation-button"></a>
+                </li>
+                <li class="carousel__navigation-item">
+                    <a href="#carousel__slide3"
+                        class="carousel__navigation-button"></a>
+                </li>
+                <li class="carousel__navigation-item">
+                    <a href="#carousel__slide4" class="carousel__navigation-button"></a>
+                </li>
+                <li class="carousel__navigation-item">
+                    <a href="#carousel__slide5" class="carousel__navigation-button"></a>
+                </li>
+            </ol>
+        </aside>
+    </section>
+</div>
+</body>
+<script src="movie.js"></script>
+</html>

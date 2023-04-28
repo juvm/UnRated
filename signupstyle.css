@@ -1,0 +1,103 @@
+body {
+    font-family: sans-serif;
+    color: white;
+}
+
+#signup-form {
+    width: 100%; /* Full width */
+    overflow: auto; /* Enable scroll if needed */
+    position: fixed;
+
+    display: flex;
+    
+}
+
+#signup-form::before {    
+    content: "";
+    background-image: url('./images/signup-bg.jpg');
+    background-size: cover;
+    position: fixed;
+    top: 0px;
+    right: 0px;
+    bottom: 0px;
+    left: 0px;
+    opacity: 0.6;
+    background-position: center;
+    background-repeat: no-repeat;
+    height: 100%;
+}
+
+#signup-inner {
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    border: 1px solid gray;
+    background-color: #131720;
+    background-color: rgb(0,0,0);
+    position: fixed ;
+    width: 40%;
+    height: auto;
+    
+    overflow: auto; 
+}
+
+#form-logo {
+    text-align: center;
+    padding-bottom: 10px;
+}
+
+#form-logo a {
+    color: white;
+    text-decoration: none;
+}
+
+/* Full-width input fields */
+#uname, #psw, #mail, #confirm-psw {
+  width: 100%;
+  padding: 10px 12px;
+  margin: 8px 0;
+  display: inline-block;
+  border: 1px solid rgb(3, 3, 29);
+  box-sizing: border-box;
+  border-radius: 3px;
+}
+
+/* Set a style for all buttons */
+#signup-form button {
+  background-color: #162956;
+  color: rgb(162, 161, 161);
+  padding: 14px 20px;
+  margin: 8px 0;
+  border: none;
+  border-radius: 2px;
+  cursor: pointer;
+  width: 100%;
+}
+
+#signup-form button:hover {
+  opacity: 0.8;
+}
+
+.container {
+  padding: 30px;
+}
+
+/* Modal Content/Box */
+.signup-content {
+  background-color: black;
+  margin: 5% auto 15% auto; /* 5% from the top, 15% from the bottom and centered */
+  border: 1px solid transparent;
+  width: 50%; /* Could be more or less, depending on screen size */
+}
+
+.bottom {
+    margin: 0px 20px;
+    border-top: .5px solid gray;
+    text-align: center;
+    font-size: 15px;
+}
+
+.logo-font {
+    font-family: UnifrakturMaguntia;
+    font-size: 55px;
+}
